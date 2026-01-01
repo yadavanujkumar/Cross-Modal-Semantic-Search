@@ -73,7 +73,7 @@ class CrossModalSearchEngine:
             print(f"Error loading image from {image_source}: {e}")
             return None
     
-    def encode_images(self, image_sources: List[str]) -> np.ndarray:
+    def encode_images(self, image_sources: List[str]) -> Tuple[np.ndarray, List[Image.Image], List[str]]:
         """
         Encode a list of images into 512-dimensional embeddings.
         

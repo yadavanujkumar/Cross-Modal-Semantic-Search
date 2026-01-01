@@ -19,8 +19,8 @@ def create_test_images():
     
     # Image 1: Red image (could represent a dog)
     img1 = Image.new('RGB', (300, 300), color='red')
-    draw = ImageDraw.Draw(img1)
-    draw.text((100, 140), "DOG", fill='white')
+    draw1 = ImageDraw.Draw(img1)
+    draw1.text((100, 140), "DOG", fill='white')
     img1_path = 'test_images/red_image.jpg'
     img1.save(img1_path)
     images.append(img1_path)
@@ -28,8 +28,8 @@ def create_test_images():
     
     # Image 2: Blue image (could represent water/ocean)
     img2 = Image.new('RGB', (300, 300), color='blue')
-    draw = ImageDraw.Draw(img2)
-    draw.text((80, 140), "OCEAN", fill='white')
+    draw2 = ImageDraw.Draw(img2)
+    draw2.text((80, 140), "OCEAN", fill='white')
     img2_path = 'test_images/blue_image.jpg'
     img2.save(img2_path)
     images.append(img2_path)
@@ -37,8 +37,8 @@ def create_test_images():
     
     # Image 3: Green image (could represent grass/nature)
     img3 = Image.new('RGB', (300, 300), color='green')
-    draw = ImageDraw.Draw(img3)
-    draw.text((80, 140), "GRASS", fill='white')
+    draw3 = ImageDraw.Draw(img3)
+    draw3.text((80, 140), "GRASS", fill='white')
     img3_path = 'test_images/green_image.jpg'
     img3.save(img3_path)
     images.append(img3_path)
@@ -46,8 +46,8 @@ def create_test_images():
     
     # Image 4: Yellow image (could represent sun/beach)
     img4 = Image.new('RGB', (300, 300), color='yellow')
-    draw = ImageDraw.Draw(img4)
-    draw.text((80, 140), "BEACH", fill='black')
+    draw4 = ImageDraw.Draw(img4)
+    draw4.text((80, 140), "BEACH", fill='black')
     img4_path = 'test_images/yellow_image.jpg'
     img4.save(img4_path)
     images.append(img4_path)
@@ -55,8 +55,8 @@ def create_test_images():
     
     # Image 5: Gray image (could represent technology)
     img5 = Image.new('RGB', (300, 300), color='gray')
-    draw = ImageDraw.Draw(img5)
-    draw.text((50, 140), "COMPUTER", fill='white')
+    draw5 = ImageDraw.Draw(img5)
+    draw5.text((50, 140), "COMPUTER", fill='white')
     img5_path = 'test_images/gray_image.jpg'
     img5.save(img5_path)
     images.append(img5_path)
