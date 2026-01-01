@@ -13,6 +13,8 @@ import torch
 import clip
 from PIL import Image
 from sklearn.metrics.pairwise import cosine_similarity
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend for environments without display
 import matplotlib.pyplot as plt
 from typing import List, Tuple, Union
 import urllib.request
@@ -214,7 +216,7 @@ class CrossModalSearchEngine:
         plt.tight_layout()
         plt.savefig('search_results.png', dpi=150, bbox_inches='tight')
         print("\nResults saved to 'search_results.png'")
-        plt.show()
+        plt.close()  # Close the figure to free memory
 
 
 def main():

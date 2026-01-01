@@ -48,6 +48,7 @@ Thumbs.db
 *.gif
 *.bmp
 search_results.png
+test_images/
 
 # Model cache
 .cache/
