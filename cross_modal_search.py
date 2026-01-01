@@ -81,7 +81,10 @@ class CrossModalSearchEngine:
             image_sources: List of image URLs or local paths
             
         Returns:
-            NumPy array of shape (n_images, 512) containing image embeddings
+            Tuple containing:
+                - NumPy array of shape (n_images, 512) containing image embeddings
+                - List of successfully loaded PIL Image objects
+                - List of corresponding image paths/URLs
         """
         print(f"\nEncoding {len(image_sources)} images...")
         embeddings = []
